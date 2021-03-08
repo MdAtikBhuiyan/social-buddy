@@ -29,7 +29,7 @@ const PostDetail = () => {
             <p>Post Body: {post.body}</p>
             <p>Number of comments: {comments.length} </p>
             {
-                comments.map( comment => <Comment comment={comment}></Comment>)
+                comments.map( comment => <Comment comment={comment} key={comment.id}></Comment>)
             }
         </div>
     );
